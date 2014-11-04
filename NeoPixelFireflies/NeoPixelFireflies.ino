@@ -4,10 +4,10 @@
 #include <Adafruit_NeoPixel.h>
 
 #define PIN 6
-#define NUM_PIXELS 4
-#define MAX_GLOWING_PIXELS 2
-#define MOVE_THRESHOLD 5
-#define STATIONARY_LATENCY 10000 
+#define NUM_PIXELS 7
+#define MAX_GLOWING_PIXELS 4
+#define MOVE_THRESHOLD 1.0 // Quite sensitive
+#define STATIONARY_LATENCY 30000 // 30s glow after last move 
 
 class Firefly {
   private:

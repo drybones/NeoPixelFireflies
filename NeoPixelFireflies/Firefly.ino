@@ -35,16 +35,16 @@ void Firefly::animate() {
 }
 
 uint32_t Firefly::getColor() {
-    uint8_t w = 255*_hue;
-    if(w < 85) {
-      return Adafruit_NeoPixel::Color(w*3*_brightness, (255-w*3)*_brightness, 0);
-    } else if(w < 170) {
-      w -= 85;
-      return Adafruit_NeoPixel::Color((255-w*3)*_brightness, 0, w*3*_brightness);
-    } else {
-      w -= 170;
-      return Adafruit_NeoPixel::Color(0, w*3*_brightness, (255-w*3)*_brightness);
-    }  
+  uint8_t w = 255*_hue;
+  if(w < 85) {
+    return Adafruit_NeoPixel::Color(w*3*_brightness, (255-w*3)*_brightness, 0);
+  } else if(w < 170) {
+    w -= 85;
+    return Adafruit_NeoPixel::Color((255-w*3)*_brightness, 0, w*3*_brightness);
+  } else {
+    w -= 170;
+    return Adafruit_NeoPixel::Color(0, w*3*_brightness, (255-w*3)*_brightness);
+  }  
 }
 
 
