@@ -8,7 +8,7 @@ The fireflies glow on and off with a hue picked from a specified range. At any t
 You can see an example of the results at https://www.youtube.com/watch?v=nOLEo_zldIc
 
 Wiring is essentially the same as Adafruit's Sparkle Skirt, though I used single core wire between the NeoPixels rather the conductive thread.
-https://learn.adafruit.com/sparkle-sk...
+https://learn.adafruit.com/sparkle-skirt/overview
 
 Parts used:
 
